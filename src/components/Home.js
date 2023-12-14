@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-export const Home = () => {
+const Home = () => {
   return (
     <div>
          <img src={image3} alt="Your Logo" className="img-fluid"  />

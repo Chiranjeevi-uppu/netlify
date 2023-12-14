@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from './components/Navbar';
 import BuyLands from './components/BuyLands';
 import Premium from './components/Premium';
@@ -6,11 +5,26 @@ import SellMyLand from './components/SellMyLand';
 import Testimonials from './components/Testimonials';
 import Services from './components/Services';
 import Home from './components/Home';
-import Footer from "./components/Footer";
 import { LandProvider } from "./LandContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import  { useEffect } from 'react';
+//import ReactGA from 'react-ga4';
+import TagManager from 'react-gtm-module'
+
+
 
 function App() {
+  const tagManagerArgs = {
+    gtmId: '<YOUR GTM ID>'
+  }
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs)
+
+  }, []);
+
+   
+   
+
   return (
     <LandProvider>
     <BrowserRouter>
