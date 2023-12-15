@@ -9,16 +9,22 @@ import { LandProvider } from "./LandContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  { useEffect } from 'react';
 //import ReactGA from 'react-ga4';
-import TagManager from 'react-gtm-module'
+// import TagManager from 'react-gtm-module'
 
 
 
 function App() {
-  const tagManagerArgs = {
-    gtmId: '<GTM-NJ66CC3N>'
-  }
+
+  // const gtmId = process.env.NEXT_PUBLIC_GTM_ID ||"";
+
+  // const tagManagerArgs : TagManagerArgs = {
+
+  //   gtmId,
+
+  // };
+
   useEffect(() => {
-    TagManager.initialize(tagManagerArgs)
+    
 
   }, []);
 
