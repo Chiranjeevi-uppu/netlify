@@ -15,7 +15,7 @@ import TagManager from 'react-gtm-module'
 
 function App() {
   const tagManagerArgs = {
-    gtmId: '<YOUR GTM ID>'
+    gtmId: '<GTM-5R45MVVQ>'
   }
   useEffect(() => {
     TagManager.initialize(tagManagerArgs)
